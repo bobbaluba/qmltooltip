@@ -2,6 +2,8 @@
 
 A simple tooltip system for qml.
 
+![screenshot](screenshot.png)
+
 ## Usage
 
 An example is provided in `main.qml`. It can be run with the command:
