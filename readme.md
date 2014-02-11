@@ -10,6 +10,10 @@ An example is provided in `main.qml`. It can be run with the command:
 
     qmlviewer main.qml
 
+Or
+
+    qmlscene main.qml
+
 Attach a ToolTipArea to each container you want to have a tooltip.
 
 A message can be specified by using the text property of ToolTipArea.
@@ -36,14 +40,14 @@ Custom placement:
         color: "#ffaaaa"
         ToolTipArea{
             tip {
-                text: "This is a tool tip"
+                text: "This is a tool tip with custom placement"
                 x: thingWithToolTip.width + 10
                 y: thingWithToolTip.height/2 - tip.height/2
             }
         }
     }
 
-Custom delay and placment:
+Custom delay and placement:
 
     Rectangle{
         id: thingWithToolTip
@@ -54,7 +58,7 @@ Custom delay and placment:
             showDelay: 0
             hideDelay: 1000
             tip {
-                text: "This is a tool tip"
+                text: "This is a tool tip with custom delays"
                 x: thingWithToolTip.width + 10
                 y: thingWithToolTip.height/2 - tip.height/2
             }
