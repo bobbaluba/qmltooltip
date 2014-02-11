@@ -20,50 +20,56 @@ A message can be specified by using the text property of ToolTipArea.
 
 ## Examples
 
-Simplest:
+### Simplest
 
-    Rectangle{
-        width: 50
-        height: 50
-        color: "#ffaaaa"
-        ToolTipArea{
-            text: "This is a tool tip"
-        }
+```QML
+Rectangle{
+    width: 50
+    height: 50
+    color: "#ffaaaa"
+    ToolTipArea{
+	text: "This is a tool tip"
     }
+}
+```
 
-Custom placement:
+### Custom placement
 
-    Rectangle{
-        id: thingWithToolTip
-        width: 50
-        height: 50
-        color: "#ffaaaa"
-        ToolTipArea{
-            tip {
-                text: "This is a tool tip with custom placement"
-                x: thingWithToolTip.width + 10
-                y: thingWithToolTip.height/2 - tip.height/2
-            }
-        }
+```QML
+Rectangle{
+    id: thingWithToolTip
+    width: 50
+    height: 50
+    color: "#ffaaaa"
+    ToolTipArea{
+	tip {
+	    text: "This is a tool tip with custom placement"
+	    x: thingWithToolTip.width + 10
+	    y: thingWithToolTip.height/2 - tip.height/2
+	}
     }
+}
+```
 
-Custom delay and placement:
+### Custom delay and placement
 
-    Rectangle{
-        id: thingWithToolTip
-        width: 50
-        height: 50
-        color: "#aaaaff"
-        ToolTipArea{
-            showDelay: 0
-            hideDelay: 1000
-            tip {
-                text: "This is a tool tip with custom delays"
-                x: thingWithToolTip.width + 10
-                y: thingWithToolTip.height/2 - tip.height/2
-            }
-        }
+```QML
+Rectangle{
+    id: thingWithToolTip
+    width: 50
+    height: 50
+    color: "#aaaaff"
+    ToolTipArea{
+	showDelay: 0
+	hideDelay: 1000
+	tip {
+	    text: "This is a tool tip with custom delays"
+	    x: thingWithToolTip.width + 10
+	    y: thingWithToolTip.height/2 - tip.height/2
+	}
     }
+}
+```
 
 ## License (zlib)
 
