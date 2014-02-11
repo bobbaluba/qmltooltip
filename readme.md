@@ -46,7 +46,7 @@ Rectangle{
             text: "This is a tool tip with custom placement"
             x: thingWithToolTip.width + 10
             y: thingWithToolTip.height/2 - tip.height/2
-	}
+        }
     }
 }
 ```
