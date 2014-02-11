@@ -12,7 +12,7 @@ MouseArea {
     Timer {
         id:showTimer
         interval: 1000
-        running: (mouseArea.containsMouse && !tip.visible)
+        running: mouseArea.containsMouse && !tip.visible
         onTriggered: tip.show();
     }
     Timer {
