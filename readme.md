@@ -8,7 +8,7 @@ A simple tooltip system for qml.
 
 An example is provided in `main.qml`. It can be run with the command:
 
-qmlviewer main.qml
+    qmlviewer main.qml
 
 Attach a ToolTipArea to each container you want to have a tooltip.
 
